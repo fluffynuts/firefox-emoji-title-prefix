@@ -1,0 +1,14 @@
+body { width: 380px; margin: 8px; font: 13px system-ui, sans-serif; }
+input { width: 100%; box-sizing: border-box; margin: 4px 0; padding: 4px; }
+.current { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.current span { font-size: 18px; }
+#groups { display: flex; justify-content: space-between; margin: 4px 0; }
+#groups button { font-size: 16px; padding: 2px 4px; background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; }
+#groups button.active { border-bottom-color: #0060df; }
+#groups.searching { opacity: 0.4; }
+#grid { display: grid; grid-template-columns: repeat(9, 1fr); height: 200px; overflow-y: auto; align-content: start; }
+#grid button { font-size: 20px; padding: 2px; background: none; border: 1px solid transparent; cursor: pointer; }
+#grid button:hover, #grid button:focus { border-color: gray; }
+#preview { min-height: 1.2em; margin: 4px 0 0; color: #555; }
+#status { min-height: 1.2em; margin: 6px 0 2px; }
+#status.error { color: #c00; }

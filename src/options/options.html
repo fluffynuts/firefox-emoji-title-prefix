@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Emoji Tab Title</title>
+    <style>
+      body { font: 14px system-ui, sans-serif; margin: 2em; max-width: 40em; }
+      li { display: flex; align-items: center; gap: 1em; margin: 0.4em 0; }
+      .emoji { font-size: 20px; }
+      .pattern { flex: 1; font-family: monospace; }
+      #error { color: #c00; }
+    </style>
+  </head>
+  <body>
+    <h1>Emoji Tab Title</h1>
+    <p id="empty" hidden>Nothing set yet. Click the toolbar button on a page to pick an emoji.</p>
+    <ul id="list"></ul>
+    <p id="error" role="alert"></p>
+    <script src="../lib/core.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

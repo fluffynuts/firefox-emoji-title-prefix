@@ -1,0 +1,11 @@
+{
+  "name": "firefox-emoji-tab-title",
+  "private": true,
+  "version": "0.1.0",
+  "devDependencies": {
+    "emojibase-data": "^17.0.0",
+    "eslint": "^8.57.1",
+    "globals": "^17.13.0",
+    "web-ext": "^8.0.0"
+  }
+}

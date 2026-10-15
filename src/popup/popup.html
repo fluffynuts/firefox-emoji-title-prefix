@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <label for="pattern">Host or pattern (<code>*</code> matches anything)</label>
+    <input id="pattern" type="text" spellcheck="false" autocomplete="off" />
+    <div class="current">
+      Current: <span id="current">none</span>
+      <button id="remove" type="button">Remove</button>
+    </div>
+    <input id="search" type="search" placeholder="Search all emoji (optional), e.g. fire, red, rocket" autocomplete="off" />
+    <div id="groups"></div>
+    <div id="grid"></div>
+    <p id="preview">&nbsp;</p>
+    <p id="status" role="status"></p>
+    <a id="manage" href="#">Manage all</a>
+    <script src="../lib/core.js"></script>
+    <script src="../lib/emoji-data.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-.PHONY: install test lint build run clean emoji-data
+.PHONY: install test lint build src-zip run clean emoji-data
 
 node_modules: package.json
 	npm install
@@ -15,6 +15,11 @@ lint: node_modules
 
 build: test lint
 	npx web-ext build --source-dir src --artifacts-dir dist --overwrite-dest
+
+# AMO wants the source for anything generated; git archive packages exactly what is committed.
+src-zip:
+	mkdir -p dist
+	git archive --format=zip --output="dist/emoji_tab_title-$$(node -p "require('./package.json').version")-src.zip" HEAD
 
 run: node_modules
 	npx web-ext run --source-dir src
